@@ -166,6 +166,11 @@ print(odd_square)
 new_list = [x for x in range(10)]
 print(new_list)
 
+# delete elements of list by using del keyword
+
+del new_list[2,6]
+print(new_list)
+
 
 
 
