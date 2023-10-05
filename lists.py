@@ -130,6 +130,44 @@ print(l2.pop(6))
     11. sort() : Sort items in a list in ascending order
 """
 
+# List comprehension :
+
+# Typical method :
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+new_list = []
+
+for x in fruits:
+    if "a" in x:
+        new_list.append(x)
+
+print(new_list)
+
+# List comprehension :
+
+list_of_fruits =["apple","banana","mango","kiwi","cherry"]
+new_list = [x for x in list_of_fruits if "a" in x]
+print(new_list)
+
+# Typical method :
+odd_square = []
+for x in range(1,11):
+    if x % 2 == 1:
+        odd_square.append(x**2)
+
+print(odd_square)
+
+# With list comprehension :
+
+odd_square = [x**2 for x in range(1,11) if x % 2 == 1]
+print(odd_square)
+
+# range function in comprehension :
+
+new_list = [x for x in range(10)]
+print(new_list)
+
+
+
 
 
 
