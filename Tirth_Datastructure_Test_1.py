@@ -22,10 +22,12 @@ print(week_number())
 
 
 def split_list():
-
-    for i in range(n):
-        lst1.append(lst[i::n])
-    print(lst1)
+    if n <= len(lst):
+        for i in range(n):
+            lst1.append(lst[i::n])
+        print(lst1)
+    else:
+        print("You have entered range out of index")
 
 while True:
     try:
@@ -38,7 +40,12 @@ for i in range(0,l):
     ele = input()
     lst.append(ele)
 print("The list that you have entered is :",lst)
-n = int(input("Enter the value of n :"))
+while True:
+    try:
+        n = int(input("Enter the value of n :"))
+        break
+    except ValueError:
+        print("Enter valid value of n")
 lst1 = []
 
 split_list()
