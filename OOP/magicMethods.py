@@ -145,3 +145,16 @@
 # p = Call("Hello")
 # p(5)
 
+# __del__
+
+# class MyClass:
+#     def __init__(self,name):
+#         self.name = name
+#
+#     def __del__(self):
+#         print(f"Deleting {self.name} object")
+#
+# obj1 = MyClass("First object")
+# obj2 = MyClass("Second object")
+#
+# del obj1
